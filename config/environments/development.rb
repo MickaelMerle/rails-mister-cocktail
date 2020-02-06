@@ -59,3 +59,9 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 end
+# config/environments/development.rb
+Rails.application.configure do
+  # [...]
+  config.assets.debug = true # Switch to false, reload server, look at source.
+  # [...]
+end
